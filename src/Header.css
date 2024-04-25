@@ -10,7 +10,7 @@ header {
 
 .header--left {
   display: flex;
-  margin: 7px;
+  margin: 8px;
 }
 
 .header--left--logo {
@@ -20,7 +20,7 @@ header {
 
 .header--left--city {
   width: 125px;
-  height: 36px;
+  height: 34px;
   background-color: #FFE660;
   border-radius: 10px;
   font-size: 19pt;
@@ -28,10 +28,18 @@ header {
 
 .header--right {
   display: flex;
+  margin: 8px 8px 8px 52%;
+}
+
+.header--rigft--item {
+  width: 34px;
+  height: 34px;
+  margin: 0px 8px
 }
 
 .header--rigft--status {
   color: #AAA7A7;
+  width: 129px;
 }
 
 .header--right--profile {

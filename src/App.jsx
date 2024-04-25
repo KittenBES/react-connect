@@ -16,10 +16,10 @@ function App() {
           <div class="header--left--city">Томск</div>
         </div>
         <div class="header--right">
-          <p class="header--rigft--status">No business</p>
-          <a><img src={HeaderList}></img></a>
-          <a><img src={HeaderLike}></img></a>
-          <a><img class="header--right--profile" src={Profile} ></img></a>
+          <p class="header--rigft--item header--rigft--status">No business</p>
+          <a><img src={HeaderList} class="header--rigft--item"></img></a>
+          <a><img src={HeaderLike} class="header--rigft--item"></img></a>
+          <a><img class="header--right--profile header--rigft--item" src={Profile} ></img></a>
         </div>
       </header>
       <main>

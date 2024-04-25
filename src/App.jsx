@@ -16,7 +16,7 @@ function App() {
           <div class="header--left--city">Томск</div>
         </div>
         <div class="header--right">
-          <p class="header--rigft--status">No businesss</p>
+          <p class="header--rigft--status">No business</p>
           <a><img src={HeaderList}></img></a>
           <a><img src={HeaderLike}></img></a>
           <a><img class="header--right--profile" src={Profile} ></img></a>

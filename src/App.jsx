@@ -1,36 +1,33 @@
 import { useState } from 'react'
-import HeaderList from './assets/header-list.svg'
-import HeaderLike from './assets/header-like.svg'
+import Header from './Components/Header'
 import Profile from './assets/profile.png'
-import './App.css'
-import './Header.css'
+import './CSS/Profile.css'
 
 function App() {
   const [count, setCount] = useState(0)
 
   return (
     <>
-      <header>
-        <div class="header--left">
-          <a class="header--left--logo">Connect</a>
-          <div class="header--left--city">Томск</div>
-        </div>
-        <div class="header--right">
-          <p class="header--rigft--item header--rigft--status">No business</p>
-          <a><img src={HeaderList} class="header--rigft--item"></img></a>
-          <a><img src={HeaderLike} class="header--rigft--item"></img></a>
-          <a><img class="header--right--profile header--rigft--item" src={Profile} ></img></a>
-        </div>
-      </header>
+      <Header />
       <main>
         <h1>Редактировать профиль</h1>
-        <div className="card">
-          <button onClick={() => setCount((count) => count + 1)}>
-            count is {count}
-          </button>
-          <p>
-            Edit <code>src/App.jsx</code> and save to test HMR
-          </p>
+        <div class="content">
+          <img class="content--porfile" src={Profile}></img>
+          <form>
+            <p>Ваше имя</p>
+            <input type="text" name="first_name" placeholder='Марина' required></input>
+            <p>Ваша фамилия</p>
+            <input type="text" name="last_name" placeholder='Иванова' required></input>
+            <p>Ваша почта</p>
+            <input type="email" name="email" placeholder='marina@rte.rw' required></input>
+            <p>Связанные аккаунты</p>
+            <p>Новый пароль</p>
+            <input type="password" name="pin" placeholder='********' inputmode="numeric" required></input>
+            <p>Подтверждение пароля</p>
+            <input type="password" name="pin-dubl" placeholder='********' inputmode="numeric" required></input>
+            <button>Сохранить изменения</button>
+            <button class="button--delete">Удалить профиль</button>
+          </form>
         </div>
       </main>
       <footer></footer>

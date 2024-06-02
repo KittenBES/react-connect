@@ -1,0 +1,21 @@
+.servinfo{
+    height: 330px;
+    border-radius: 10px;
+    background-color: #FFE660;
+    color: #393939;
+    place-items: length;
+    margin: 40px 0px;
+    padding: 10px 25px;
+
+    &__details{
+        text-decoration: underline;
+        font-weight: 400;
+        margin-bottom: 10px;
+    }
+
+    &__worker{
+        display: flex;
+        justify-content: center;
+        margin-top: 40px;
+    }
+}

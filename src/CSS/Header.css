@@ -1,12 +1,12 @@
 header {
-  width: 100%;
+  width: 98.5%;
   height: 30px;
   display: flex;
   background-color: #393939;
   font-size: 16pt;
   border-radius: 15px;
   padding: 8px;
-
+  z-index: 10;
 }
 
 .header--left {
@@ -15,14 +15,14 @@ header {
 }
 
 .header--left--logo {
-  color: #F7F7F7;
+  color: #f7f7f7;
   font-size: 20pt;
   margin: 0px 10px;
 }
 
 .header--left--city {
   width: 125px;
-  background-color: #FFE660;
+  background-color: #ffe660;
   border-radius: 10px;
   font-size: 17pt;
   margin: 0px 10px;
@@ -42,7 +42,7 @@ header {
 }
 
 .header--rigft--status {
-  color: #AAA7A7;
+  color: #aaa7a7;
   width: 129px;
   text-align: center;
   font-size: 16pt;

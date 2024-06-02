@@ -1,0 +1,17 @@
+.page {
+  display: flex;
+}
+
+.left {
+  width: 46%;
+}
+.center {
+  width: 1px;
+  height: auto;
+  background-color: #000;
+  margin: 40px 40px;
+}
+
+.right {
+  width: 46%;
+}
